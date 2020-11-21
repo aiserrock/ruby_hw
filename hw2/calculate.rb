@@ -6,6 +6,7 @@ def main
   while true
     print "Введите данные >"
     data = gets
+    #Trap for ctrl-z
     break unless data
     if data == "over"
       break
