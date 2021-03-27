@@ -1,1 +1,1 @@
-# ruby_hw
+# ruby_samples
