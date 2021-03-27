@@ -1,0 +1,14 @@
+<% form({method: :post}, {obj: @params}) do |f| %>
+  <form method="post">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <%= f.input(:expression, type: :text, placeholder: "3+4+5", label: "строка") %>
+        </div>
+        <div class="large-12 cell">
+          <%= f.button(value: "Суммировать", class: "button success") %>
+        </div>
+      </div>
+    </div>
+  </form>
+<% end %>

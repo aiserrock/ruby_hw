@@ -1,0 +1,10 @@
+Metrics/AbcSize:
+  Enabled: false
+Layout/LineLength:
+  Max: 100
+Metrics/MethodLength:
+  Max: 15
+Style/NegatedIf:
+  Enabled: false
+AllCops:
+  NewCops: enable

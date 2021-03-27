@@ -1,0 +1,27 @@
+ <div class="large-12 cell">
+    <form method="post">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <% unless @error.nil? %>
+                    <div class="large-12 cell">
+                        <%= @error %>
+                    </div>
+                <% end %>
+                <div class="large-12 cell">
+                    <label>Введите JSON для отображения дерева
+                        <textarea type="text" placeholder="JSON" name="tree" value="<%= @json_str %>" cols="30" rows="10">
+                        </textarea>
+                    </label>
+                </div>
+                <div class="large-12 cell">
+                    <input type=submit value="Отобразить" class="button">
+                </div>
+                <div class="large-12 cell">
+                    <button name="default" type=submit value="true" class="button">
+                        Дерево по-умолчанию
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

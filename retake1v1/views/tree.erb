@@ -1,0 +1,45 @@
+ <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+        <a href=/welcome class="button">
+            Назад
+        </a>
+    </div>
+    <div class="large-12 cell">
+        <h3>Элемент:</h3>
+    </div>
+    <div class="large-12 cell">
+        Заголовок: <%= @tree.title %>
+    </div>
+    <% unless @tree.description.empty? %>
+        <div class="large-12 cell">
+            Описание: <%= @tree.description %>
+        </div>
+    <% end %>
+    <form method="post" class="large-12 cell">
+        <% if !@tree.parent.nil? %>
+            <div class="large-12 cell">
+                <button class="button" type="submit" name="go_up" value="">
+                    Родитель: <%= @tree.parent.title %>
+                </button>
+            </div>
+        <% end %>
+        <% unless @tree.children.empty? %>
+            <div class="large-12 cell">
+                Дочерние элементы:
+
+                <% @tree.each_child  do |child, index| %>
+                    <div style="padding-left: 20px">
+                        <button class="button" type="submit" name="go_down" value="<%= index %>">
+                            <%= child.title %>
+                        </button>
+                    </div>
+                <% end %>
+            </div>
+
+        <% else %>
+            <div class="large-12 cell">
+            Длина дерева до данного элемента: <%= @tree.tree_length() %>
+            </div>
+        <% end %>
+    </form>
+</div>

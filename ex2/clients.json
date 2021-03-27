@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Vasya",
+        "last_name": "Pupkin",
+        "phone_number": "123456",
+        "minutes": 800,
+        "plan_name": "time-based"
+    },
+    {
+        "name": "Ivan",
+        "last_name": "King",
+        "phone_number": "123426",
+        "minutes": 200,
+        "plan_name": "time-based"
+    },
+    {
+        "name": "Fedor",
+        "last_name": "Petrov",
+        "phone_number": "133126",
+        "minutes": 720,
+        "plan_name": "unlimited"
+    },
+    {
+        "name": "Masha",
+        "last_name": "Sidorova",
+        "phone_number": "863229",
+        "minutes": 412,
+        "plan_name": "unlimited"
+    },
+    {
+        "name": "Petr",
+        "last_name": "Fedorov",
+        "phone_number": "164226",
+        "minutes": 120,
+        "plan_name": "combined"
+    }
+]

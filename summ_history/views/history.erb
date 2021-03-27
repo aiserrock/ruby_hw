@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <% @list.each do |e| %>
+    <li>
+      Дата: <%= e[:date] %>. Выражение: <%= e[:value1]%> + <%= e[:value2]%> = <%= e[:result]%>
+    </li>
+    <% end %>
+  </ul>
+
+</div>
